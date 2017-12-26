@@ -34,9 +34,14 @@ public class HeartItem {
 
 
     public HeartItem(float pointX, float pointY) {
-        setPointX(pointX);
-//        this.pointX = pointX;
+        this.pointX = pointX;
+        this.startPointX = (int) pointX;
         this.pointY = pointY;
+    }
+
+
+    public void setStartPointX(int startPointX) {
+        this.startPointX = startPointX;
     }
 
     public float getPointX() {
@@ -45,7 +50,6 @@ public class HeartItem {
 
     public void setPointX(float pointX) {
         this.pointX = pointX;
-        this.startPointX = (int) pointX;
     }
 
     public float getPointY() {

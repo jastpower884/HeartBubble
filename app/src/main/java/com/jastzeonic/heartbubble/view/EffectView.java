@@ -80,6 +80,7 @@ public class EffectView extends View {
             if (!item.isDisplay()) {
                 item.setPointX(x);
                 item.setPointY(y);
+                item.setStartPointX((int) x);
 
                 item.setViewWidth(getWidth());
                 item.setViewHeight(getHeight());
